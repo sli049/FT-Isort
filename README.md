@@ -11,3 +11,5 @@ To test the fault tolerant introsot:
 
 1. Install gcc-7.1.0 and replace /include/c++/7.1.0/bits/stl_algo.h and stl_heap.h with our modifed ones.
 2. Run the program, test_ft_isort.cpp, to test different protection methods.
+
+Thank you very much!
