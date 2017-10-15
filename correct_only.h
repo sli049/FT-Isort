@@ -5,10 +5,10 @@
 #include <algorithm>
 using namespace std;
 
-int cons_correction (float* s, int n){
-    //clock_t start, end, tk_out, sft_l, bi_isrt, sft_r;
-   // start = clock();
-    float* tkele = new float[500];
+int cons_correction (double* s, int n){
+    clock_t start, end, tk_out, sft_l, bi_isrt, sft_r;
+    start = clock();
+    double* tkele = new double[500];
     int* tkloc = new int[500];
 
 	int arraysz = 0;
@@ -31,8 +31,8 @@ int cons_correction (float* s, int n){
 	}
     int sz = arraysz;
     if (sz == 0){
-       // end = clock();
-     //   cout << endl << "there is no fault, time consumption is " << (double)(end-start)/CLOCKS_PER_SEC<<" s." << endl;
+        end = clock();
+        cout << endl << "there is no fault, time consumption is " << (double)(end-start)/CLOCKS_PER_SEC<<" s." << endl;
         return 0;
     }
 
@@ -52,7 +52,7 @@ int cons_correction (float* s, int n){
 
     int a, b;
     a = 0; b = n-sz-1;
-    float value = tkele[0];
+    double value = tkele[0];
     //vector<int> tkloc1;
     bool cond = true;
 
@@ -95,13 +95,13 @@ int cons_correction (float* s, int n){
     
    // cout<<endl<< "my correction "<< (double)(end-start)/CLOCKS_PER_SEC<<" s."<<endl;
     
-/*	int counter = 0;
+	int counter = 0;
     for (int i = 0; i < n - 1; i++){
         if (s[i] > s[i+1]) counter++;
     }
     if (counter == 0) cout << "my correction is correct."<<endl;
     else cout << "my correcrtion is not correct. There are "<< counter << " errors." << endl;
-  */  
+    
     return 0;
     
 }
