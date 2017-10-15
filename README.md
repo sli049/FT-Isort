@@ -4,8 +4,8 @@ stl_algo.h: implemented the fault injection and compute 3 times of checksums to 
 stl_heap.h: implemented the fault injection.
 The above 2 files together implemented:
 1. Fault tolerant instrosort protected by aggressive protection with and/or without memory protection.
-Plus another file, correct_only.h which implemented Algorithm 5 in our paper, all the 3 files together implemented:
-1. and 2. Fault tolerant introsort protected by aggressive protection with and/or without memory protection.
+Plus another file, correct_only.h which implemented Algorithm 5 in our paper, all the 3 files together implemented: 
+2. Fault tolerant introsort protected by aggressive protection with and/or without memory protection.
 
 To test the fault tolerant introsot:
 
