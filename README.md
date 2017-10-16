@@ -1,11 +1,11 @@
 # FT-Isort
 
-stl_algo.h: implemented the fault injection and compute 3 times of checksums to protect the array from memory errors.
-stl_heap.h: implemented the fault injection.
+stl_algo.h: implemented the fault injection to quicksort procedure and compute 3 times of checksums to protect the array from memory errors.
+stl_heap.h: implemented the fault injection to heapsort procedure.
 The above 2 files together implemented:
-1. Fault tolerant instrosort protected by aggressive protection with and/or without memory protection.
+1. Fault tolerant instrosort protected by Aggressive protection with and/or without memory protection.
 Plus another file, correct_only.h which implemented Algorithm 5 in our paper, all the 3 files together implemented: 
-2. Fault tolerant introsort protected by aggressive protection with and/or without memory protection.
+2. Fault tolerant introsort protected by Convervative protection with and/or without memory protection.
 
 To test the fault tolerant introsot:
 
