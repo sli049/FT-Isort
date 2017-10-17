@@ -18,4 +18,19 @@ To test the fault tolerant introsot:
 
 2. Run the program, test_ft_isort.cpp, to test different protection methods.
 
+
+
+Expected results as in Table 2 of our paper:
+
+Fault free run of std::sort:                                      101.3 seconds
+
+std::sort with Conservative protection (mem and comp protection): 109.3 seconds
+
+std::sort with Conservative protection (only comp protection):    103.8 seconds
+
+std::sort with Aggressive protection (mem and comp protection):   104.3 seconds
+
+std::sort with Aggressive protection (only comp protection):      101.1 seconds
+
+
 Thank you very much!
