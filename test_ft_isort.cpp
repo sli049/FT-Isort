@@ -23,6 +23,9 @@ int main(){
 
     start = clock();
 
+    //use this code if you want to test the original std::sort without errors
+        sort(s, s+n);
+
     //use this code if you want to test conservative protection with memory protection
         //sort_err_mem_cons(s, s+n);
         //cons_correction(s, n);
